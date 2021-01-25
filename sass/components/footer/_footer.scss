@@ -5,6 +5,7 @@
   @media screen and (min-width: 1200px) {
     & .container {
       display: flex;
+      align-items: baseline;
     }
   }
 }

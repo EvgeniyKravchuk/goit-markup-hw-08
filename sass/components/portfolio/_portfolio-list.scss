@@ -9,6 +9,7 @@
 .portfolio-list-item {
   width: 450px;
   @include transition(box-shadow);
+  border: 1px solid rgba(238, 238, 238, 1);
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -48,7 +49,7 @@
 
 .portfolio-list-text {
   color: $secondaryColor;
-  @include mainFont(16px, 1.875, 0.03em);
+  @include mainFontSemyBold(16px, 1.875, 0.03em);
 }
 
 .portfolio-list-img {

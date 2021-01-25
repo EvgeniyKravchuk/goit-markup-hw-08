@@ -2,7 +2,6 @@
   @extend %positionCenter;
   background-color: #ffffff;
   width: 450px;
-  height: 100vh;
   border-radius: 4px;
   padding: 40px;
   overflow: auto;
@@ -10,6 +9,9 @@
     width: 528px;
     height: 581px;
     overflow: visible;
+  }
+  @media screen and (orientation: landscape) and (max-width: 767px) {
+    height: 100vh;
   }
 }
 

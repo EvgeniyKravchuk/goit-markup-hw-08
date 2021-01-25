@@ -469,6 +469,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-list-item:hover, .portfolio-list-item:focus {
@@ -520,7 +521,7 @@ img {
 
 .portfolio-list-text {
   color: #757575;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -599,6 +600,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -616,6 +620,7 @@ img {
   .footer-left-side {
     margin-right: 70px;
     margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -673,6 +678,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -706,12 +714,17 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-center-side {
     margin-left: 0px;
-    padding-top: 12px;
   }
 }
 
 .footer-social-links-list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-links-list {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-social-links-list-item:not(:last-child) {
@@ -743,7 +756,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-right-side {
     margin-left: auto;
-    padding-top: 12px;
   }
 }
 
@@ -762,6 +774,7 @@ img {
   .footer-input {
     min-width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
