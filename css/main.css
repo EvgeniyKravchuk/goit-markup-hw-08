@@ -1,4 +1,4 @@
-.menu-button, .main-section-icon-container, .image-text-thumb, .employee-social-links-list, .employee-social-link, .regular-customers-list-link, .footer-social-links-list, .footer-social-list-link, .subscribe-form > .hero-button, .modal-form-input-icon {
+.menu-button, .hero .container, .hero, .main-section-icon-container, .image-text-thumb, .employee-social-links-list, .employee-social-link, .regular-customers-list-link, .footer-social-links-list, .footer-social-list-link, .subscribe-form > .hero-button, .modal-form-input-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,6 +399,18 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    width: 700px;
+  }
+}
+
 .hero-button {
   width: 200px;
   height: 50px;
@@ -417,18 +429,17 @@ img {
   border: none;
 }
 
+.hero .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 60px;
-  background-image: url(../images/hero-m-480.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-m-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 480px;
@@ -437,31 +448,37 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-m-960.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-m-960.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m-960.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-t-768.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-t-768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-768.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-t-1536.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-t-1536.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-1536.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-d-1600.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-d-1600.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-1600.jpg);
+    height: 600px;
   }
 }
 
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-d-3200.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-d-3200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-3200.jpg);
   }
 }
 
@@ -1021,6 +1038,7 @@ img {
   .modal-window {
     width: 528px;
     height: 581px;
+    overflow: visible;
   }
 }
 
