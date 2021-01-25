@@ -1,0 +1,34 @@
+.about-me-container {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.about-me-list {
+  display: flex;
+}
+
+.about-me-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.img-thumb {
+  position: relative;
+}
+
+.image-text-thumb {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  @extend %centeredFlex;
+}
+
+.image-text {
+  @include mainFontBold(14px, 1.143, 0.03em);
+  color: $darkTheme;
+}

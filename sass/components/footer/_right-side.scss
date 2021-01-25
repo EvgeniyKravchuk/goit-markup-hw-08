@@ -1,0 +1,37 @@
+.footer-right-side {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding-top: 12px;
+  }
+}
+
+.footer-input {
+  background-color: inherit;
+  margin-bottom: 20px;
+  min-width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px;
+  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.subscribe-form {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.form-subscribe-button-icon {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+.subscribe-form > .hero-button {
+  @extend %centeredFlex;
+}

@@ -1,0 +1,10 @@
+.footer {
+  background-color: #2f303a;
+  min-width: 480px;
+  padding: 60px 0px;
+  @media screen and (min-width: 1200px) {
+    & .container {
+      display: flex;
+    }
+  }
+}

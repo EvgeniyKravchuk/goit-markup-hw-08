@@ -1,0 +1,54 @@
+.footer-left-side {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 61px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-left: 0px;
+  }
+}
+
+.footer-logo {
+  @extend %secondaryFont;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer-logo-item {
+  color: $activeColor;
+}
+
+.footer-address-list {
+  text-align: center;
+}
+
+.footer-address-list-item {
+  @include mainFont(14px, 1.714, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer-address-list-map {
+  color: #ffffff;
+}
+
+.footer-address-list-link {
+  color: inherit;
+}
+
+.footer-tablet-flex-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}

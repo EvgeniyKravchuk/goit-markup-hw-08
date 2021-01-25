@@ -1,0 +1,36 @@
+.button-list {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-list-item {
+  @include mainFontSemyBold(16px, 1.626, 0.03em);
+  display: block;
+  &:not(last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.list-button {
+  @include transition(background-color color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: $activeColor;
+    outline: none;
+    color: $darkTheme;
+  }
+}

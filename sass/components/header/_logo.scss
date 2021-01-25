@@ -1,0 +1,18 @@
+.logo {
+  @extend %secondaryFont;
+  color: $lightTheme;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.logo-item {
+  color: $activeColor;
+}

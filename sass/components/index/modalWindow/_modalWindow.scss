@@ -1,0 +1,134 @@
+.modal-window {
+  @extend %positionCenter;
+  background-color: #ffffff;
+  width: 450px;
+  height: 100vh;
+  border-radius: 4px;
+  padding: 40px;
+  overflow: auto;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal-title {
+  display: block;
+  @include mainFontBold(20px, 1.5, 0.03em);
+  text-align: center;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    @include mainFontBold(20px, 1.15, 0.03em);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  @include transition(fill border-color);
+  &:focus,
+  &:hover {
+    fill: $activeColor;
+    border-color: $activeColor;
+    outline: none;
+  }
+}
+
+.is-hidden {
+  transform: scale(0);
+}
+
+.modal-form-label {
+  @include mainFont(12px, 1.167, 0.01em);
+  color: $secondaryColor;
+  &:focus {
+    color: $activeColor;
+  }
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 40px;
+  @include transition(border-color);
+  &:focus {
+    border-color: $activeColor;
+    outline: none;
+  }
+  &:focus + .modal-form-input-icon {
+    fill: $activeColor;
+  }
+}
+.modal-form-input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.modal-form-input-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  @extend %centeredFlex;
+}
+
+.modal-form-icon {
+  @extend %positionCenter;
+  fill: inherit;
+  @include transition(fill);
+}
+
+.modal-form-comments-label {
+  @include mainFont(12px, 1.167, 0.01em);
+  color: $secondaryColor;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.modal-form-comments-label-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  resize: none;
+  &:hover,
+  &:focus {
+    border-color: $activeColor;
+    outline: none;
+  }
+  &::placeholder {
+    color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.modal-form-confirmation-label {
+  @include mainFont(12px, 1.167, 0.03em);
+  color: $secondaryColor;
+}
+
+.confirmation-details-link {
+  color: $activeColor;
+}
+
+.modal-form-confirmation-label-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-checkbox {
+  margin-right: 8px;
+}

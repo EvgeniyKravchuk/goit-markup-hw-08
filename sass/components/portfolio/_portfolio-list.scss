@@ -1,0 +1,63 @@
+.portfolio-list {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-list-item {
+  width: 450px;
+  @include transition(box-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 2) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.portfolio-list-thumb {
+  padding: 20px 24px;
+}
+
+.portfolio-list-title {
+  @include mainFontBold(18px, 2, 0.06em);
+  color: $lightTheme;
+  margin-bottom: 4px;
+}
+
+.portfolio-list-text {
+  color: $secondaryColor;
+  @include mainFont(16px, 1.875, 0.03em);
+}
+
+.portfolio-list-img {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
+}
